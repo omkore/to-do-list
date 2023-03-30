@@ -1,4 +1,5 @@
 {
+  "homepage":"http://omkore.github.io/to-do-list",
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
@@ -10,8 +11,11 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
+    
   },
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -26,7 +30,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
+      "not dead", 
       "not op_mini all"
     ],
     "development": [
